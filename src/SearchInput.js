@@ -10,7 +10,7 @@ class SearchInput extends PureComponent {
   render() {
     return (
       <TextField
-        style={{ 'margin-top' : '20px'}}
+        style={{ marginTop : '20px'}}
         hintText="Enter your search query"
         onChange={this.handleChange}
       />

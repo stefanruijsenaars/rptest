@@ -14,14 +14,15 @@ class SearchResults extends PureComponent {
 
   render() {
     // Assumption: it's OK to just show a comma separated list of jobs. Suggested improvement: turn it into a bulleted list so it can be styled and displayed right to left if necessary.
+    let num = 1;
     return (
       <Table
         selectable={false}
         style={{
           width: '90%',
-          'margin-left': 'auto',
-          'margin-right': 'auto',
-          'margin-top': '20px',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginTop: '20px',
         }}>
         <TableHeader displaySelectAll={false}>
           <TableRow>
@@ -36,12 +37,13 @@ class SearchResults extends PureComponent {
         <TableBody>
         {this.props.searchData.map((searchData) =>
               <SearchResultRow
+                key={num++}
                 name={searchData.name}
                 company={searchData.company}
                 email={searchData.email}
                 city={searchData.city}
                 country={searchData.country}
-                jobHistory={searchData.job_history.join(", ")}
+                jobHistory={searchData.job_history}
               />
         )}
         </TableBody>
