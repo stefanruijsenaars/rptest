@@ -1,4 +1,3 @@
-
 import React, { PureComponent } from 'react';
 
 import SearchInput from './SearchInput';

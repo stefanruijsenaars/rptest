@@ -7,6 +7,7 @@ import {
   TableRowColumn,
 } from 'material-ui/Table';
 
+/** Component for a row with a single search results in it */
 class SearchResultRow extends PureComponent {
 
   render() {

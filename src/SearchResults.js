@@ -9,9 +9,11 @@ import {
   TableRow,
 } from 'material-ui/Table';
 
+/** Table with search results in it */
 class SearchResults extends PureComponent {
 
   render() {
+    // Assumption: it's OK to just show a comma separated list of jobs. Suggested improvement: turn it into a bulleted list so it can be styled and displayed right to left if necessary.
     return (
       <Table
         selectable={false}
