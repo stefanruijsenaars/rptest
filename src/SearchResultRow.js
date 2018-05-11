@@ -7,7 +7,6 @@ import {
   TableRowColumn,
 } from 'material-ui/Table';
 
-
 class SearchResultRow extends PureComponent {
 
   render() {
@@ -19,7 +18,6 @@ class SearchResultRow extends PureComponent {
         <TableRowColumn>{this.props.city}</TableRowColumn>
         <TableRowColumn>{this.props.country}</TableRowColumn>
         <TableRowColumn>{this.props.jobHistory}</TableRowColumn>
-
       </TableRow>
     );
   }

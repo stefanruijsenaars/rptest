@@ -9,12 +9,7 @@ import {
   TableRow,
 } from 'material-ui/Table';
 
-
 class SearchResults extends PureComponent {
-
-  componentDidMount() {
-    console.log(this.props.searchData);
-  }
 
   render() {
     return (
@@ -26,9 +21,8 @@ class SearchResults extends PureComponent {
           'margin-right': 'auto',
           'margin-top': '20px',
         }}>
-        <TableHeader         displaySelectAll={false}
->
-          <TableRow  selectable={false}>
+        <TableHeader displaySelectAll={false}>
+          <TableRow>
             <TableHeaderColumn>Name</TableHeaderColumn>
             <TableHeaderColumn>Company</TableHeaderColumn>
             <TableHeaderColumn>Email</TableHeaderColumn>

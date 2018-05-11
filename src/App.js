@@ -1,16 +1,18 @@
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import SearchInput from './SearchInput';
 import SearchResults from './SearchResults';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+/** function that allows for filtering contacts */
 import filterContacts from './filterContacts';
 
 import './App.css';
 
-class App extends Component {
+class App extends PureComponent {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -20,13 +22,12 @@ class App extends Component {
 
   handleSearchChange = (event) => {
     this.setState({
-      filteredContacts: filterContacts(event.target.value,),
+      filteredContacts: filterContacts(event.target.value),
     });
   }
 
   render() {
     return (
-
       <MuiThemeProvider>
         <div className="App">
           <header className="App-header">
@@ -39,7 +40,6 @@ class App extends Component {
             searchData={this.state.filteredContacts}
           />
         </div>
-
       </MuiThemeProvider>
     );
   }
