@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-In the project directory, you can run:
+First, run `npm install` (you’ll need to have Node >= 6 on your local development machine).
+
+In the project directory, you can now run:
 
 ### `npm start`
 
@@ -21,4 +23,4 @@ Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The app is now ready to be deployed!
